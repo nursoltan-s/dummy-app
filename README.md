@@ -1,24 +1,28 @@
-# README
+# Community Art Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Community art** is a social media like community for artists and painters.
 
-Things you may want to cover:
+### Installation on local machine
 
-* Ruby version
+#### 1) Requirements
+  - Ruby version: 2.6.5
+  - Rails version: 6.0.1
+  - Node.js >= 10.x
+  - Yarn
+  - Postgresql
 
-* System dependencies
+#### 2) Install gems
+  - Run  ```bundle install && yarn```
 
-* Configuration
+#### 3) Create and migrate DB
+  - Run ```bundle exec rails db:create db:migrate```
 
-* Database creation
+#### 4) Install Foreman gem
+  - Run ```gem install foreman```
 
-* Database initialization
+#### 5) Run Locally
+  - Run ```foreman start -f Procfile.dev```
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
+### TODO: Run with Docker
